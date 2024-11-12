@@ -1,0 +1,38 @@
+﻿<Window x:Class="Lektion_12_opg_6_8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lektion_12_opg_6_8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="36,27,652,335">
+            <RadioButton x:Name="NorthBtn" Content="North" Checked="NorthBtn_Checked"/>
+            <RadioButton x:Name="SouthBtn" Content="South"/>
+            <RadioButton x:Name="EastBtn" Content="East"/>
+            <RadioButton x:Name="WestBtn" Content="West"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Margin="173,27,531,346">
+            <CheckBox x:Name="LemonBox" Content="Lemon"/>
+            <CheckBox x:Name="AppleBox" Content="Apple"/>
+            <CheckBox x:Name="BananaBox" Content="Banana"/>
+            <CheckBox x:Name="PearBox" Content="Pear"/>
+        </StackPanel>
+        <StatusBar Margin="64,217,621,58">
+            <StackPanel Orientation="Vertical">
+                <StatusBarItem x:Name="StatusRadio" Content="Status Radio:" />
+                <StatusBarItem x:Name="StatusBtn" Content="None Checked" />
+            </StackPanel>
+        </StatusBar>
+        <StatusBar Margin="268,217,400,74">
+            <StackPanel Orientation="Vertical">
+                <StatusBarItem Content="Status Checkboxes" />
+                <StatusBarItem x:Name="StatusLemon" Content="" />
+                <StatusBarItem x:Name="StatusApple" Content="" />
+                <StatusBarItem x:Name="StatusBanana" Content="" />
+                <StatusBarItem x:Name="StatusPear" Content="" />
+            </StackPanel>
+        </StatusBar>
+    </Grid>
+</Window>
